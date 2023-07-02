@@ -1,0 +1,28 @@
+:root {
+  --color-white: hsl(0, 0%, 98%);
+  --color-gray: hsl(0, 0%, 41%);
+  --color-black: hsl(0, 0%, 8%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Epilogue", sans-serif;
+  background-color: var(--color-white);
+  min-height: 100vh;
+  color: var(--color-gray);
+}

@@ -11,6 +11,12 @@
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="css/style.css" />
 
     <title>Frontend Mentor | Intro section with dropdown navigation</title>
@@ -27,15 +33,83 @@
     </style>
   </head>
   <body>
-    Features Company Careers About Login Register Make remote work Get your team
-    in sync, no matter your location. Streamline processes, create team rituals,
-    and watch productivity soar. Learn more
+    <nav class="navigation">
+      <img src="images/logo.svg" alt="Snap logo" class="logo" />
 
-    <div class="attribution">
+      <ul class="list">
+        <li class="list__item dropdown">
+          <span>Features</span>
+          <ul class="dropdown__list">
+            <!-- <li class="dropdown__item"></li>
+            <li class="dropdown__item"></li>
+            <li class="dropdown__item"></li>
+            <li class="dropdown__item"></li> -->
+          </ul>
+        </li>
+        <li class="list__item dropdown">
+          <span>Company</span>
+          <ul class="dropdown__list">
+            <!-- <li class="dropdown__item"></li>
+            <li class="dropdown__item"></li>
+            <li class="dropdown__item"></li> -->
+          </ul>
+        </li>
+        <li class="list__item">Careers</li>
+        <li class="list__item">About</li>
+      </ul>
+
+      <div class="auth">
+        <button class="btn btn--no-border">Login</button>
+        <button class="btn btn--with-border">Register</button>
+      </div>
+    </nav>
+    <div class="container">
+      <main class="main">
+        <div class="main__left">
+          <h1 class="heading-primary">Make <br />remote work</h1>
+          <p class="small-text">
+            Get your team in sync, no matter your location. Streamline
+            processes, create team rituals, and watch productivity soar.
+          </p>
+          <button class="btn btn--black-bg">Learn more</button>
+          <div class="img-list">
+            <img
+              src="images/client-databiz.svg"
+              alt="databiz logo"
+              class="img-list__img"
+            />
+            <img
+              src="images/client-audiophile.svg"
+              alt="databiz logo"
+              class="img-list__img"
+            />
+            <img
+              src="images/client-meet.svg"
+              alt="databiz logo"
+              class="img-list__img"
+            />
+            <img
+              src="images/client-maker.svg"
+              alt="databiz logo"
+              class="img-list__img"
+            />
+          </div>
+        </div>
+        <div class="main__right">
+          <img
+            src="images/image-hero-desktop.png"
+            alt="hero image"
+            class="big-img"
+          />
+        </div>
+      </main>
+    </div>
+
+    <!-- <div class="attribution">
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
         >Frontend Mentor</a
       >. Coded by <a href="#">Your Name Here</a>.
-    </div>
+    </div> -->
   </body>
 </html>

@@ -1,0 +1,99 @@
+//////////////////////
+//LOGO
+.logo {
+  margin-right: 8rem;
+  margin-top: 0.5rem;
+  width: 10rem;
+  height: auto;
+}
+
+//////////////////////
+//NAVIGATION LIST
+
+.list {
+  list-style: none;
+  display: flex;
+  margin-right: auto;
+
+  &__item {
+    font-size: 1.8rem;
+
+    &:not(:last-of-type) {
+      margin-right: 5rem;
+    }
+  }
+}
+//////////////////////
+//BUTTONS
+.auth {
+  font-size: 1.8rem;
+  display: flex;
+  align-items: center;
+}
+
+.btn {
+  font-size: inherit;
+  font-family: inherit;
+  display: inline-block;
+  padding: 1.5rem 2.5rem;
+  border-radius: 20px;
+  color: currentColor;
+  cursor: pointer;
+
+  &:first-of-type {
+    margin-right: 4rem;
+  }
+
+  &--no-border {
+    padding: 0;
+    height: fit-content;
+    width: fit-content;
+    background-color: transparent;
+    border-radius: 0%;
+    border: none;
+  }
+  &--with-border {
+    border: 3px solid black;
+  }
+  &--black-bg {
+    width: fit-content;
+    border: none;
+    background-color: var(--color-black);
+    color: var(--color-white);
+    padding: 2rem 4rem;
+    border-radius: 15px;
+  }
+}
+
+//////////////////////
+//TEXT STYLES
+.heading-primary {
+  color: var(--color-black);
+  font-size: 10rem;
+}
+
+.small-text {
+  width: 55%;
+  line-height: 3rem;
+  font-size: 2rem;
+}
+//////////////////////
+//HERO IMG
+.big-img {
+  // width: 100%;
+  max-height: 80rem;
+}
+
+//////////////////////
+//IMG LIST
+.img-list {
+  display: flex;
+  justify-content: flex-start;
+  margin: 0;
+  align-items: center;
+  &__img {
+    &:not(:last-child) {
+      margin-right: 4rem;
+    }
+  }
+}

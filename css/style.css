@@ -1,0 +1,117 @@
+:root {
+  --color-white: hsl(0, 0%, 98%);
+  --color-gray: hsl(0, 0%, 41%);
+  --color-black: hsl(0, 0%, 8%); }
+
+* {
+  margin: 0;
+  padding: 0; }
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit; }
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; }
+
+body {
+  font-family: "Epilogue", sans-serif;
+  background-color: var(--color-white);
+  min-height: 100vh;
+  color: var(--color-gray); }
+
+.navigation {
+  width: 100%;
+  padding: 4rem 4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+
+.container {
+  max-width: 160rem;
+  margin: 5rem auto; }
+
+.main {
+  display: flex;
+  justify-content: flex-start;
+  font-size: 1.8rem; }
+  .main__left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative; }
+    .main__left > * {
+      margin-bottom: 5rem; }
+    .main__left > *:last-child {
+      position: absolute;
+      bottom: 0;
+      width: 100%; }
+
+.logo {
+  margin-right: 8rem;
+  margin-top: 0.5rem;
+  width: 10rem;
+  height: auto; }
+
+.list {
+  list-style: none;
+  display: flex;
+  margin-right: auto; }
+  .list__item {
+    font-size: 1.8rem; }
+    .list__item:not(:last-of-type) {
+      margin-right: 5rem; }
+
+.auth {
+  font-size: 1.8rem;
+  display: flex;
+  align-items: center; }
+
+.btn {
+  font-size: inherit;
+  font-family: inherit;
+  display: inline-block;
+  padding: 1.5rem 2.5rem;
+  border-radius: 20px;
+  color: currentColor;
+  cursor: pointer; }
+  .btn:first-of-type {
+    margin-right: 4rem; }
+  .btn--no-border {
+    padding: 0;
+    height: fit-content;
+    width: fit-content;
+    background-color: transparent;
+    border-radius: 0%;
+    border: none; }
+  .btn--with-border {
+    border: 3px solid black; }
+  .btn--black-bg {
+    width: fit-content;
+    border: none;
+    background-color: var(--color-black);
+    color: var(--color-white);
+    padding: 2rem 4rem;
+    border-radius: 15px; }
+
+.heading-primary {
+  color: var(--color-black);
+  font-size: 10rem; }
+
+.small-text {
+  width: 55%;
+  line-height: 3rem;
+  font-size: 2rem; }
+
+.big-img {
+  max-height: 80rem; }
+
+.img-list {
+  display: flex;
+  justify-content: flex-start;
+  margin: 0;
+  align-items: center; }
+  .img-list__img:not(:last-child) {
+    margin-right: 4rem; }
