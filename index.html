@@ -39,19 +39,55 @@
       <ul class="list">
         <li class="list__item dropdown">
           <span>Features</span>
+          <img
+            src="images/icon-arrow-down.svg"
+            alt="arrow-down"
+            class="arrow-down"
+          />
+          <img src="images/icon-arrow-up.svg" alt="arrow-up" class="arrow-up" />
           <ul class="dropdown__list">
-            <!-- <li class="dropdown__item"></li>
-            <li class="dropdown__item"></li>
-            <li class="dropdown__item"></li>
-            <li class="dropdown__item"></li> -->
+            <li class="dropdown__item">
+              <img
+                src="images/icon-todo.svg"
+                alt="todo"
+                class="dropdown__img"
+              /><span>Todo List</span>
+            </li>
+            <li class="dropdown__item">
+              <img
+                src="images/icon-calendar.svg"
+                alt="todo"
+                class="dropdown__img"
+              /><span>Calendar</span>
+            </li>
+            <li class="dropdown__item">
+              <img
+                src="images/icon-reminders.svg"
+                alt="todo"
+                class="dropdown__img"
+              /><span>Reminders</span>
+            </li>
+            <li class="dropdown__item">
+              <img
+                src="images/icon-planning.svg"
+                alt="todo"
+                class="dropdown__img"
+              /><span>Planning</span>
+            </li>
           </ul>
         </li>
         <li class="list__item dropdown">
           <span>Company</span>
+          <img
+            src="images/icon-arrow-down.svg"
+            alt="arrow-down"
+            class="arrow-down"
+          />
+          <img src="images/icon-arrow-up.svg" alt="arrow-up" class="arrow-up" />
           <ul class="dropdown__list">
-            <!-- <li class="dropdown__item"></li>
-            <li class="dropdown__item"></li>
-            <li class="dropdown__item"></li> -->
+            <li class="dropdown__item"><span>History</span></li>
+            <li class="dropdown__item"><span>Our Team</span></li>
+            <li class="dropdown__item"><span>Blog</span></li>
           </ul>
         </li>
         <li class="list__item">Careers</li>
@@ -96,13 +132,114 @@
           </div>
         </div>
         <div class="main__right">
-          <img
-            src="images/image-hero-desktop.png"
-            alt="hero image"
-            class="big-img"
-          />
+          <picture class="big-img">
+            <source
+              srcset="images/image-hero-mobile.png"
+              media="(max-width: 56.25em)"
+            />
+            <img
+              src="images/image-hero-desktop.png"
+              alt="hero image"
+              class="big-img"
+            />
+          </picture>
         </div>
       </main>
+    </div>
+
+    <a href="#pop-open" class="pop--open">
+      <img src="images/icon-menu.svg" alt="icon-close-menu" />
+    </a>
+
+    <div class="popup" id="pop-open">
+      <a href="#" class="pop--close">
+        <img src="images/icon-close-menu.svg" alt="icon-close-menu" />
+      </a>
+      <div class="popup__content">
+        <ul class="popup__list">
+          <li class="popup__item popup-dropdown">
+            <input
+              type="checkbox"
+              name="pop-check1"
+              id="pop-check1"
+              class="popup__checkbox"
+            />
+            <label for="pop-check1">Features</label>
+            <img
+              src="images/icon-arrow-down.svg"
+              alt="arrow-down"
+              class="arrow-down"
+            />
+            <img
+              src="images/icon-arrow-up.svg"
+              alt="arrow-up"
+              class="arrow-up"
+            />
+            <ul class="popup-dropdown__list">
+              <li class="popup-dropdown__item">
+                <img
+                  src="images/icon-todo.svg"
+                  alt="todo"
+                  class="popup-dropdown__img"
+                /><span>Todo List</span>
+              </li>
+              <li class="popup-dropdown__item">
+                <img
+                  src="images/icon-calendar.svg"
+                  alt="todo"
+                  class="popup-dropdown__img"
+                /><span>Calendar</span>
+              </li>
+              <li class="popup-dropdown__item">
+                <img
+                  src="images/icon-reminders.svg"
+                  alt="todo"
+                  class="popup-dropdown__img"
+                /><span>Reminders</span>
+              </li>
+              <li class="popup-dropdown__item">
+                <img
+                  src="images/icon-planning.svg"
+                  alt="todo"
+                  class="popup-dropdown__img"
+                /><span>Planning</span>
+              </li>
+            </ul>
+          </li>
+          <li class="popup__item popup-dropdown">
+            <input
+              type="checkbox"
+              name="pop-check2"
+              id="pop-check2"
+              class="popup__checkbox"
+            />
+            <label for="pop-check2">Company</label>
+            <!-- <span>Company</span> -->
+            <img
+              src="images/icon-arrow-down.svg"
+              alt="arrow-down"
+              class="arrow-down"
+            />
+            <img
+              src="images/icon-arrow-up.svg"
+              alt="arrow-up"
+              class="arrow-up"
+            />
+            <ul class="popup-dropdown__list">
+              <li class="popup-dropdown__item"><span>History</span></li>
+              <li class="popup-dropdown__item"><span>Our Team</span></li>
+              <li class="popup-dropdown__item"><span>Blog</span></li>
+            </ul>
+          </li>
+          <li class="popup__item">Careers</li>
+          <li class="popup__item">About</li>
+        </ul>
+
+        <div class="popup__auth">
+          <button class="btn btn--no-border">Login</button>
+          <button class="btn btn--with-border">Register</button>
+        </div>
+      </div>
     </div>
 
     <!-- <div class="attribution">

@@ -8,7 +8,7 @@
 
 .container {
   max-width: 160rem;
-  margin: 5rem auto;
+  margin: 2rem auto;
 }
 
 .main {
@@ -16,11 +16,22 @@
   justify-content: flex-start;
   font-size: 1.8rem;
 
+  @include respond(tab-port) {
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+
   &__left {
     display: flex;
     flex-direction: column;
     justify-content: center;
     position: relative;
+
+    @include respond(tab-port) {
+      align-items: center;
+      padding: 4rem;
+    }
 
     & > * {
       margin-bottom: 5rem;
@@ -30,6 +41,10 @@
       position: absolute;
       bottom: 0;
       width: 100%;
+
+      @include respond(tab-port) {
+        bottom: -0.5rem;
+      }
     }
   }
 
