@@ -38,7 +38,11 @@ phone: 600px (600/16) => 37.5em
 
 .container {
   max-width: 160rem;
-  margin: 2rem auto; }
+  margin: 0 auto;
+  padding: 5rem 4rem; }
+  @media only screen and (max-width: 37.5em) {
+    .container {
+      padding: 5rem 0; } }
 
 .main {
   display: flex;
@@ -222,8 +226,8 @@ phone: 600px (600/16) => 37.5em
 .pop--open, .pop--close {
   position: absolute;
   z-index: 200;
-  top: 5rem;
-  right: 2rem;
+  top: 4.5rem;
+  right: 4rem;
   cursor: pointer; }
   .pop--open:hover, .pop--close:hover {
     opacity: 50%; }
